@@ -17,3 +17,13 @@ match response:
         print(f"Data is received! {data}")
     case _:
         print("Other")
+
+
+match response:
+    case {"Error": msg}:
+        print(f"Error {msg}")
+    case {"data": data} if data is not None:
+        print(f"Data is received! {data}")
+    case _:
+        print("Other")
+
