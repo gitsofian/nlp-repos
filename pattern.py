@@ -3,4 +3,3 @@ point1 = (12, 13)
 
 print(point)
 print(point1)
-
